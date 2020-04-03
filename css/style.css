@@ -96,12 +96,13 @@ body {
     flex-basis: 100%;
     text-align: center;
     position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 85px);
+    top: calc(50% - 70px);
+    left: calc(50% - 110px);
     background-image: url(../img/background-game-title.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 20px 22px 15px 22px;
 }
 .description-game {
     text-align: center;
@@ -150,16 +151,18 @@ body {
 .more{
     display: inline-block;
     padding: 7px 25px 7px 25px;
+    border-radius: 15px;
+    margin-top: 4%;
+    border: none;
+    background-color: #460046;
+    margin-left: 70%;
+}
+.more > a {
+    color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 22px;
     letter-spacing: 3px;
     font-weight: 500;
-    border-radius: 15px;
-    margin-top: 4%;
-    border: none;
-    color: #fff;
-    background-color: #460046;
-    margin-left: 70%;
 }
 .stream {
     display: flex;
@@ -209,7 +212,7 @@ body {
     .image {
         height: 600px;
     }
-    .more {
+    .more > a {
         font-size: 18px;
         margin: 10px auto;
     }
@@ -236,9 +239,15 @@ body {
         color: #fff;
         text-align: center;
         position: absolute;
-        top: calc(50% - 50px);
-        left: calc(50% - 85px);
+        top: calc(50% - 60px);
+        left: calc(50% - 105px);
 
+    }
+}
+
+@media(max-width: 740px) {
+    .game-title{
+        top: calc(50% - 70px);
     }
 }
 
@@ -309,7 +318,7 @@ body {
     .article-image {
         width: 240px;
     }
-    .more {
+    .more > a {
         font-size: 16px;
     }
     .logo {
