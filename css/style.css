@@ -98,7 +98,7 @@ body {
     position: absolute;
     top: calc(50% - 50px);
     left: calc(50% - 85px);
-    background-image: url(/img/background-game-title.png);
+    background-image: url(../img/background-game-title.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
